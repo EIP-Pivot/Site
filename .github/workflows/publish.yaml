@@ -1,0 +1,39 @@
+name: publish to site
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: install the deps
+        run: yarn
+
+      - name: build the website
+        run: yarn generate
+
+      - name: clone repo
+        env:
+          SVN_EMAIL: ${{ secrets.SVN_EMAIL }}
+          SVN_SECRET: ${{ secrets.SVN_SECRET }}
+        run: |
+          svn checkout --username $SVN_EMAIL --password $SVN_SECRET https://labeip.epitech.eu/svn/2023/pixelup ${{ runner.temp }}/pixelup
+
+      - name: copy to folder
+        run: |
+          rsync --delete -av ./dist/* ${{ runner.temp }}/pixelup/www
+
+      - name: commit to svn
+        env:
+          SVN_EMAIL: ${{ secrets.SVN_EMAIL }}
+          SVN_SECRET: ${{ secrets.SVN_SECRET }}
+        run: |
+          cd ${{ runner.temp }}/pixelup
+          svn status
+          svn add --force www/
+          svn status
+          svn commit --username $SVN_EMAIL --password $SVN_SECRET -m "${{ github.event.head_commit.message }}"
