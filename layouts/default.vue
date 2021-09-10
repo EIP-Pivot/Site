@@ -28,21 +28,24 @@ html {
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
-.button--green {
+.button--blue {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+  border: 1px solid #258c9e;
+  color: #258c9e;
   text-decoration: none;
   padding: 10px 30px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-.button--green:hover {
+.button--blue:hover {
   color: #fff;
-  background-color: #3b8070;
+  background-color: #258c9e;
 }
 
 .button--grey {
@@ -52,7 +55,8 @@ html {
   color: #35495e;
   text-decoration: none;
   padding: 10px 30px;
-  margin-left: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .button--grey:hover {
