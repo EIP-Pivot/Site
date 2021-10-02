@@ -14,7 +14,7 @@
 
       <div class="links">
         <a
-          href="https://github.com/EIP-Pivot"
+          href="https://github.com/EIP-PixelUP/Documentation"
           target="_blank"
           rel="noopener noreferrer"
           class="button--blue"
@@ -30,7 +30,7 @@
           GitHub
         </a>
         <a
-          href="https://github.com/EIP-Pivot"
+          href="https://github.com/EIP-Pivot/pivot/releases"
           target="_blank"
           rel="noopener noreferrer"
           class="button--blue"
