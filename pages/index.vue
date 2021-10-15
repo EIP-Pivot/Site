@@ -14,6 +14,13 @@
 
       <div class="links">
         <a
+          href="."
+          rel="noopener noreferrer"
+          class="button--grey"
+        >
+          Accueil
+        </a>
+        <a
           href="https://github.com/EIP-PixelUP/Documentation"
           target="_blank"
           rel="noopener noreferrer"
@@ -36,6 +43,14 @@
           class="button--blue"
         >
           Download
+        </a>
+        <a
+          href="."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--grey"
+        >
+          About
         </a>
       </div>
     </div>
