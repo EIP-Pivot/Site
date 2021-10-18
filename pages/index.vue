@@ -4,55 +4,53 @@
       <a
         href="."
       >
-      <img src="icon_croped.png" /></a>
+      <Logo></Logo></a>
       <h1 class="title">
         Pivot
       </h1>
+
       <h2 class="subtitle">
         game engine
       </h2>
 
-      <div class="links">
-        <a
-          href="."
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          Accueil
-        </a>
-        <a
-          href="https://github.com/EIP-PixelUP/Documentation"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--blue"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/EIP-Pivot"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-        <a
-          href="https://github.com/EIP-Pivot/pivot/releases"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--blue"
-        >
-          Download
-        </a>
-        <a
-          href="."
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          About
-        </a>
+      <Nav></Nav>
+
+      <div class="article">
+        Welcome to Pivot Engine !
+        <br>
+        <br>
+        This project is still in development.
+        <br>
+        Access our current Demo and learn more about the engine here.
       </div>
+
+      <a
+        href="https://github.com/ErinGrouille/Pivot_pre_demo"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link--grey"
+      >
+        Demo
+      </a>
+      <a
+        href="."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link--blue"
+      >
+        Quick start
+      </a>
+      <a
+        href="."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link--grey"
+      >
+        Tutorials
+      </a>
+
+    <Tail></Tail>
+
     </div>
   </div>
 </template>
