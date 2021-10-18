@@ -21,7 +21,7 @@ jobs:
           SVN_EMAIL: ${{ secrets.SVN_EMAIL }}
           SVN_SECRET: ${{ secrets.SVN_SECRET }}
         run: |
-          svn checkout --username $SVN_EMAIL --password $SVN_SECRET https://labeip.epitech.eu/svn/2023/pixelup ${{ runner.temp }}/pixelup
+          svn checkout --username $SVN_EMAIL --password $SVN_SECRET https://labeip.epitech.eu/svn/2023/pivot ${{ runner.temp }}/pixelup
 
       - name: copy to folder
         run: |
