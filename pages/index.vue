@@ -1,26 +1,56 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
+      <a
+        href="."
+      >
+      <img src="icon_croped.png" /></a>
       <h1 class="title">
-        PixelUP
+        Pivot
       </h1>
+      <h2 class="subtitle">
+        game engine
+      </h2>
+
       <div class="links">
         <a
-          href="https://nuxtjs.org/"
+          href="."
+          rel="noopener noreferrer"
+          class="button--grey"
+        >
+          Accueil
+        </a>
+        <a
+          href="https://github.com/EIP-PixelUP/Documentation"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--green"
+          class="button--blue"
         >
           Documentation
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/EIP-Pivot"
           target="_blank"
           rel="noopener noreferrer"
           class="button--grey"
         >
           GitHub
+        </a>
+        <a
+          href="https://github.com/EIP-Pivot/pivot/releases"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--blue"
+        >
+          Download
+        </a>
+        <a
+          href="."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--grey"
+        >
+          About
         </a>
       </div>
     </div>
@@ -54,20 +84,23 @@ export default {}
     sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 150px;
   color: #35495e;
   letter-spacing: 1px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .subtitle {
   font-weight: 300;
-  font-size: 42px;
+  font-size: 30px;
   color: #526488;
   word-spacing: 5px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
+  margin-bottom: 0px;
 }
 
 .links {
-  padding-top: 15px;
+  padding-top: 20px;
 }
 </style>
