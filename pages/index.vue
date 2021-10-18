@@ -49,9 +49,7 @@
         Tutorials
       </a>
 
-    <div>
-      The Pivot Project is an open source project that belongs to the EPITECH students working on it
-    </div>
+    <Tail></Tail>
 
     </div>
   </div>
