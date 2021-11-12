@@ -8,8 +8,7 @@
           Accueil
         </a>
         <a
-          href="https://github.com/EIP-PixelUP/Documentation"
-          target="_blank"
+          href="documentation"
           rel="noopener noreferrer"
           class="button--blue"
         >
@@ -32,8 +31,7 @@
           Download
         </a>
         <a
-          href="."
-          target="_blank"
+          href="about"
           rel="noopener noreferrer"
           class="button--grey"
         >
