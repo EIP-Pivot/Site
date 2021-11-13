@@ -1,6 +1,6 @@
 <template>
     <div>
-        <a href=".">
+        <a href="/2023/pivot/">
             <Logo></Logo>
         </a>
         <h1 class="title">
