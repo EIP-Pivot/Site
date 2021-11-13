@@ -21,14 +21,14 @@
         Demo
       </a>
       <a
-        href="/quick_start"
+        href="/2023/pivot/quick_start"
         rel="noopener noreferrer"
         class="link--blue"
       >
         Quick start
       </a>
       <a
-        href="/tutorials"
+        href="/2023/pivot/tutorials"
         rel="noopener noreferrer"
         class="link--grey"
       >
