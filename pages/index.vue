@@ -7,6 +7,14 @@
         <div class="article_title">
         Welcome to Pivot Engine !
         </div>
+        Pivot is a modern 3D game engine.
+        <br>
+        Programmed from scratch, its objective is to push the Vulkan library to the maximum of its capacities.
+        <br>
+        Our engine aims to implement functionalities that classic engines struggle to handle, including raytracing and physically based rendering.
+        <br>
+        Pivot engine is compatible with standard industry file formats like .fbx.
+        <br><br>
         This project is still in development.
         <br>
         Access our current Demo and learn more about the engine here.
