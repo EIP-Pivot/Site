@@ -1,14 +1,14 @@
 <template>
     <div class="Nav">
         <a
-          href="."
+          href="/"
           rel="noopener noreferrer"
           class="button--grey"
         >
           Accueil
         </a>
         <a
-          href="documentation"
+          href="/documentation"
           rel="noopener noreferrer"
           class="button--blue"
         >
@@ -31,7 +31,7 @@
           Download
         </a>
         <a
-          href="about"
+          href="/about"
           rel="noopener noreferrer"
           class="button--grey"
         >

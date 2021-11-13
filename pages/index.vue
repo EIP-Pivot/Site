@@ -21,14 +21,14 @@
         Demo
       </a>
       <a
-        href="quick_start"
+        href="/quick_start"
         rel="noopener noreferrer"
         class="link--blue"
       >
         Quick start
       </a>
       <a
-        href="tutorials"
+        href="/tutorials"
         rel="noopener noreferrer"
         class="link--grey"
       >
