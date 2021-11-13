@@ -1,3 +1,3 @@
 <template>
-    <img class="logo" src="/icon_croped.png" width="50%" height="50%" />
+    <img class="logo" src="/2023/pivot/icon_croped.png" width="50%" height="50%" />
 </template>

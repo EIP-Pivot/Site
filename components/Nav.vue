@@ -1,14 +1,14 @@
 <template>
     <div class="Nav">
         <a
-          href="/"
+          href="/2023/pivot/"
           rel="noopener noreferrer"
           class="button--grey"
         >
           Accueil
         </a>
         <a
-          href="/documentation"
+          href="/2023/pivot/documentation"
           rel="noopener noreferrer"
           class="button--blue"
         >
@@ -31,7 +31,7 @@
           Download
         </a>
         <a
-          href="/about"
+          href="/2023/pivot/about"
           rel="noopener noreferrer"
           class="button--grey"
         >
