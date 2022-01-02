@@ -1,7 +1,7 @@
 <template>
     <div class="article">
         <iframe class="frame"
-            src="/doc/html/index.html"
+            src="/2023/pivot/doc/html/index.html"
             width="100%"
             height="800"
             frameborder="1">
