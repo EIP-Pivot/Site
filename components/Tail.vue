@@ -1,6 +1,6 @@
 <template>
     <div class="Tail">
-        The Pivot Project is an open source project that belongs to the EPITECH students working on it
+        The Pivot Project is an open source project that belongs to the EPITECH students working on it - github licence placeholder
     </div>
 </template>
 
@@ -9,9 +9,9 @@
   align-content: center;
   text-align: center;
   font-style: oblique;
-  font-size: 10px;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  font-size: clamp(8px, 1vw, 25px);
+  margin-top: 8vw;
+  margin-bottom: 1vw;
   color: #258c9e;
 }
 </style>

@@ -1,19 +1,7 @@
 <template>
     <div class="Nav">
-        <a
-          href="/2023/pivot/"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          Accueil
-        </a>
-        <a
-          href="/2023/pivot/documentation"
-          rel="noopener noreferrer"
-          class="button--blue"
-        >
-          Documentation
-        </a>
+        <NuxtLink class="button--grey" to="/">Accueil</NuxtLink>
+        <NuxtLink class="button--blue" to="/documentation">Documentation</NuxtLink>
         <a
           href="https://github.com/EIP-Pivot"
           target="_blank"
@@ -30,12 +18,12 @@
         >
           Download
         </a>
-        <a
-          href="/2023/pivot/about"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          About
-        </a>
+        <NuxtLink class="button--grey" to="/about">About</NuxtLink>
     </div>
 </template>
+
+<style scoped>
+.Nav {
+  margin-bottom: 8vw;
+}
+</style>

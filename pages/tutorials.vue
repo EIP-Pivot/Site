@@ -1,15 +1,6 @@
 <template>
   <div class="container">
-    <div>
-      <Head></Head>
-
-      <div class="article">
-        Placeholder tutorials page
-      </div>
-
-    <Tail></Tail>
-
-    </div>
+      <TutoFrame></TutoFrame>
   </div>
 </template>
 
