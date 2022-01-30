@@ -15,6 +15,8 @@ jobs:
 
       - name: build the website
         run: yarn generate
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: clone repo
         env:
