@@ -12,6 +12,6 @@
   font-size: clamp(8px, 1vw, 25px);
   margin-top: 8vw;
   margin-bottom: 1vw;
-  color: #258c9e;
+  color: #526488;
 }
 </style>

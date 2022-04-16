@@ -16,9 +16,9 @@
           rel="noopener noreferrer"
           class="button--blue"
         >
-          Download
+          Télécharger
         </a>
-        <NuxtLink class="button--grey" to="/about">About</NuxtLink>
+        <NuxtLink class="button--grey" to="/about">À propos</NuxtLink>
     </div>
 </template>
 

@@ -9,6 +9,7 @@
     "generate": "gh run -R EIP-Pivot/pivot download -n doc -D static/doc/ && nuxt generate"
   },
   "dependencies": {
+    "@growthbunker/vuetimeline": "^0.1.17",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3"
   },

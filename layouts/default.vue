@@ -49,43 +49,28 @@ html {
   font-size: clamp(15px, 2vw, 25px);
   margin-top: 3vw;
   margin-bottom: 3vw;
-  color: #258c9e;
+  color: #04648c;
   width: 100%;
 }
 
 .multiArticle {
   align-content: center;
-  margin-bottom: 8vw;
 }
 
 .article_title {
   font-weight: 400;
   font-size: clamp(25px, 4vw, 40px);
-  color: #526488;
+  color: #35495e;
   word-spacing: 0.5vw;
   padding-bottom: 2vw;
   margin-bottom: 0px;
 }
 
+.spacing {
+  margin-bottom: 10vw;
+}
+
 .button--blue {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #258c9e;
-  color: #258c9e;
-  text-decoration: none;
-  padding: 1vw 2vw;
-  margin-left: 0.5vw;
-  margin-right: 0.5vw;
-  margin-top: 1vw;
-  margin-bottom: 1vw;
-}
-
-.button--blue:hover {
-  color: #fff;
-  background-color: #258c9e;
-}
-
-.button--grey {
   display: inline-block;
   border-radius: 4px;
   border: 1px solid #35495e;
@@ -98,13 +83,43 @@ html {
   margin-bottom: 1vw;
 }
 
-.button--grey:hover {
+.button--blue:hover {
   color: #fff;
   background-color: #35495e;
 }
 
+.button--grey {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #494949;
+  color: #494949;
+  text-decoration: none;
+  padding: 1vw 2vw;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.button--grey:hover {
+  color: #fff;
+  background-color: #494949;
+}
+
 .frame {
-  border-color: cadetblue;
+  border-color: #04648c;
   border-style: dashed;
 }
+
+.timeline_container {
+  margin: 0 auto;
+  min-height: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center left;
+  text-align: center;
+  width: 90%;
+}
+
 </style>

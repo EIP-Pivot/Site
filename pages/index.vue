@@ -4,30 +4,28 @@
       <div class="multiArticle">
         <div class="article">
           <div class="article_title">
-          Welcome to Pivot Engine !
+          Bienvenue sur le site de Pivot Engine !
           </div>
-          Pivot is a modern 3D game engine.
+          Pivot est un moteur de jeu 3D.
           <br>
-          Programmed from scratch, its objective is to use the modern graphic cards capacities to their maximum.
+          Son but est d'utiliser les ressources offertes par les cartes graphiques modernes de la manière la plus efficace possible.
           <br>
-          Our engine aims to implement 3D functionalities considered as modern and innovative.
+          Il propose des fonctionnalités comme le "ray tracing", ou le "physicaly  based rendering". 
           <br>
-          Those include raytracing and physically based rendering.
-          <br>
-          Pivot engine will be compatible with tools and formats considered as industry standard, thus making it easy to integrate to any project.
+          Afin de proposer un outil le plus adaptable possible, Pivot est compatible avec les formats et standards de l'industrie, facilitant ainsi son intégration dans un projet.
           <br><br>
-          This project is still in development.
+          Pivot engine est en cours de développement.
           <br>
-          Access our current Demo and learn more about the engine here.
-        </div>
+          Accedez à notre démonstration actuelle et apprenez en plus sur le moteur Pivot ici.
 
+        </div>
         <a
           href="https://github.com/ErinGrouille/Pivot_pre_demo"
           target="_blank"
           rel="noopener noreferrer"
           class="button--grey"
         >
-          Game demo
+          Jeu de démonstration
         </a>
         <a
           href="https://github.com/EIP-Pivot/demo"
@@ -35,18 +33,31 @@
           rel="noopener noreferrer"
           class="button--blue"
         >
-          Engine demo
+          Démonstration du moteur
         </a>
 
-        <NuxtLink class="button--grey" to="/quick_start">Quick Start</NuxtLink>
-        <NuxtLink class="button--blue" to="/tutorials">Tutorials</NuxtLink>
-      </div>
+        <NuxtLink class="button--grey" to="/quick_start">Démarage rapide</NuxtLink>
+        <NuxtLink class="button--blue" to="/tutorials">Tutoriels</NuxtLink>
 
-      <div class="article">
-        <div class="article_title">
-        Devs last update
+        <div class="spacing"></div>
+
+        <div class="article">
+          <div class="article_title">
+          Dernère mise à jour de l'équipe Pivot
+          </div>
+        "Nous développons actuellement la Beta de Pivot engine !"
         </div>
-        "We are currently developing the Beta of Pivot engine and are happy to welcome a new member in our team !"
+
+        <div class="spacing"></div>
+
+        <div class="article">
+          <div class="article_title">
+          En apprendre plus sur l'équipe de développement et l'avancement du projet
+          </div>
+        L'équipe de développement de Pivot engine est composée d'élèves de l'école supèrieure d'informatique EPITECH, apprenez en plus sur chaque membre grace à nos présentations !
+        </div>
+        <NuxtLink class="button--grey" to="/team">L'équipe Pivot</NuxtLink>
+        <NuxtLink class="button--blue" to="/timeline">Timeline du projet</NuxtLink>
       </div>
     </div>
   </div>
