@@ -59,8 +59,8 @@
 .subtitle {
   font-weight: 300;
   font-size: 5vw;
-  color: #526488;
   word-spacing: 1vw;
   padding-bottom: 5vw;
-}
+  color: #04648c;
+  }
 </style>

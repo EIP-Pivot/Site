@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "gh run -R EIP-Pivot/pivot download -n doc -D static/doc/ && nuxt",
+    "build": "gh run -R EIP-Pivot/pivot download -n doc -D static/doc/ && nuxt build",
+    "start": "gh run -R EIP-Pivot/pivot download -n doc -D static/doc/ && nuxt start",
+    "generate": "gh run -R EIP-Pivot/pivot download -n doc -D static/doc/ && nuxt generate"
   },
   "dependencies": {
+    "@growthbunker/vuetimeline": "^0.1.17",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3"
   },
