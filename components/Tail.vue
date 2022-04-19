@@ -1,6 +1,6 @@
 <template>
     <div class="Tail">
-        The Pivot Project is an open source project that belongs to the EPITECH students working on it - github licence placeholder
+      Le projet Pivot engine est un projet open source appartenant aux élèves EPITECH travaillant dessus. - placeholder github licence
     </div>
 </template>
 
