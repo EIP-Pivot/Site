@@ -5,7 +5,7 @@
         <p>
           Contacter l'équipe Pivot par mail:
           <br><br>
-          pivot_2023@labeip.epitech.eu
+          <a href="mailto:pivot_2023@labeip.epitech.eu">pivot_2023@labeip.epitech.eu</a>
         </p>
       </div>
     </div>
