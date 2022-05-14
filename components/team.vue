@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="multiArticle">
+        <div class="multiArticle, sub_section">
             <div class="article">
                 <div class="article_title">
                     Zacharie

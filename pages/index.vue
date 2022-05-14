@@ -52,17 +52,29 @@
 
         <div class="article">
           <div class="article_title">
-          En apprendre plus sur l'équipe de développement et l'avancement du projet
+            L'équipe de développement
           </div>
-        L'équipe de développement de Pivot engine est composée d'élèves de l'école supèrieure d'informatique EPITECH, apprenez en plus sur chaque membre grace à nos présentations !
+          L'équipe de développement de Pivot engine est composée d'élèves de l'école supèrieure d'informatique EPITECH, apprenez en plus sur chaque membre grace à nos présentations !
+          <div class="small_spacing"></div>
+          <team></team>
         </div>
-        <NuxtLink class="button--grey" to="/team">L'équipe Pivot</NuxtLink>
-        <NuxtLink class="button--blue" to="/timeline">Timeline du projet</NuxtLink>
+
+        <div class="spacing"></div>
+
+        <div class="article">
+          <div class="article_title">
+            Timeline du projet
+          </div>
+          <timeline></timeline>
+        </div>
+      
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import timeline from './timeline.vue'
+export default {
+  components: { timeline },}
 </script>
