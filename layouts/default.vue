@@ -70,6 +70,10 @@ html {
   margin-bottom: 10vw;
 }
 
+.small_spacing {
+  margin-bottom: 5vw;
+}
+
 .button--blue {
   display: inline-block;
   border-radius: 4px;
@@ -120,6 +124,26 @@ html {
   align-items: center left;
   text-align: center;
   width: 90%;
+}
+
+.sub_section .article {
+  align-content: center;
+  text-align: center;
+  font-size: clamp(10px, 2vw, 20px);
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  color: #3b84a5d3;
+  width: 100%;
+}
+
+.sub_section .article_title {
+  font-weight: 400;
+  font-size: clamp(20px, 4vw, 35px);
+  font-style: oblique;
+  color: #1e5b9c;
+  word-spacing: 0.5vw;
+  padding-bottom: 2vw;
+  margin-bottom: 0px;
 }
 
 </style>
