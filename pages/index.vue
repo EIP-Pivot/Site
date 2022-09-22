@@ -28,7 +28,7 @@
           Jeu de démonstration
         </a>
         <a
-          href="https://github.com/EIP-Pivot/demo"
+          href="https://github.com/EIP-Pivot/demo-beta"
           target="_blank"
           rel="noopener noreferrer"
           class="button--blue"
