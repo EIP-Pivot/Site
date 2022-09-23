@@ -2,27 +2,63 @@
 <div class=timeline_container>
   <!-- Latest update -->
   <vue-timeline-update
-    :date="new Date('2022-05')"
-    title="Quatrième et Cinquième sprint"
-    description="Utilisation du moteur pour réaliser de plus gros jeux et recueil de retours utilisateurs. Développement de nouvelles fonctionnalités, en priorisant les plus bloquants d’après les retours utilisateurs. Création de documentation et de tutoriels pour permettre d’utiliser plus simplement le moteur."
-    category="Mai à Décembre"
+    :date="new Date('2022-11')"
+    title="lancement de Pivot"
+    description="Lancement de la version 1.0 du moteur Pivot."
+    category="Novembre 2022"
     icon="code"
     color="turquoise"
+  />
+
+  <vue-timeline-update
+    :date="new Date('2022-09')"
+    title="cinquième sprint"
+    description="Création de documentation et de tutoriels pour permettre d’utiliser plus simplement le moteur. Amélioration continue de l’expérience utilisateur pour permettre au plus grand nombre de tester le moteur Pivot."
+    category="Septembre à décembre 2022"
+    icon="code"
+    color="turquoise"
+  />
+
+  <vue-timeline-update
+    :date="new Date('2022-09')"
+    title="fin des retours utilisateurs"
+    description="Fin de la période de retours utilisateurs sur la beta du projet Pivot."
+    category="Septembre 2022"
+    icon="code"
+    color="turquoise"
+  />
+  
+  <vue-timeline-update
+    :date="new Date('2022-06')"
+    title="appel aux volontaires"
+    description="Début de l’appel aux volontaires pour recueillir des retours utilisateurs."
+    category="Juin 2022"
+    icon="code"
+    color="black"
+  />
+
+  <vue-timeline-update
+    :date="new Date('2022-05')"
+    title="quatrième sprint"
+    description="Ajout de nouvelles fonctionnalités aux moteurs nécessaires à la réalisation d’un jeu complet. Création du premier jeu de démonstration. Amélioration rapide de l’expérience utilisateur grâce aux nombreux retours de la bêta."
+    category="Mai à septembre 2022"
+    icon="code"
+    color="black"
   />
   
   <vue-timeline-update
     :date="new Date('2022-05')"
     title="version beta"
-    description="Publication de la version bêta du moteur"
+    description="Publication de la version bêta du moteur Pivot."
     category="Mai 2022"
     icon="code"
-    color="turquoise"
+    color="black"
   />
   
   <vue-timeline-update
     :date="new Date('2022-01')"
     title="troisième sprint"
-    description="Développement d’une version bêta du moteur, permettant de réaliser des jeux basiques grâce à notre langage de scripting et notre éditeur de scène. Création d’un jeu de démonstration pour montrer les capacités du moteur."
+    description="Développement d’une version bêta du moteur, permettant de réaliser des jeux basiques grâce à notre langage de scripting et notre éditeur de scène. Création de nombreuses démos techniques."
     category="Janvier à Mai"
     icon="code"
     color="black"
@@ -72,6 +108,6 @@
     icon="code"
     color="black"
   />
-  
+
 </div>
 </template>
