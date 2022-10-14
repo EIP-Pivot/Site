@@ -146,4 +146,22 @@ html {
   margin-bottom: 0px;
 }
 
+@media (max-width: 800px) {
+  html {
+    font-size: 1.2em;
+  }
+  .article {
+    font-size: 1.2em;
+  }
+  .article_title {
+    font-size: 1.5em;
+  }
+  .sub_section .article {
+    font-size: 1em;
+  }
+  .sub_section .article_title {
+    font-size: 1.2em;
+  }
+}
+
 </style>
