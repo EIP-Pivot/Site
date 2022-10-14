@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Nav></Nav>
     <Head></Head>
     <Nuxt />
     <Tail></Tail>
@@ -79,6 +80,20 @@ html {
   border-radius: 4px;
   border: 1px solid #35495e;
   color: #35495e;
+  text-decoration: none;
+  padding: 1vw 2vw;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.button--blue--important {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #35495e;
+  color: #fffcfc;
+  background-color: #35495e;
   text-decoration: none;
   padding: 1vw 2vw;
   margin-left: 0.5vw;

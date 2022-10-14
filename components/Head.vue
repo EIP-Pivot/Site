@@ -15,7 +15,6 @@
           </h2>
         </div>
       </div>
-      <Nav></Nav>
     </div>
 </template>
 
