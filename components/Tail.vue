@@ -14,4 +14,10 @@
   margin-bottom: 1vw;
   color: #526488;
 }
+
+@media (max-width: 800px) {
+  .Tail {
+    font-size: 0.8em;
+  }
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div>
+    <div class="contact">
       <div class="article">
         <p>
           Contacter l'équipe Pivot par mail:
@@ -15,3 +15,9 @@
 <script>
 export default {}
 </script>
+
+<style>
+.contact {
+  margin-top: 12vw;
+}
+</style>
