@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Nav></Nav>
     <Head></Head>
+    <Nav></Nav>
     <Nuxt />
     <Tail></Tail>
   </div>
@@ -68,7 +68,7 @@ html {
 }
 
 .spacing {
-  margin-bottom: 10vw;
+  margin-top: 10vw;
 }
 
 .small_spacing {
@@ -85,21 +85,7 @@ html {
   margin-left: 0.5vw;
   margin-right: 0.5vw;
   margin-top: 1vw;
-  margin-bottom: 1vw;
-}
-
-.button--blue--important {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #fffcfc;
-  background-color: #35495e;
-  text-decoration: none;
-  padding: 1vw 2vw;
-  margin-left: 0.5vw;
-  margin-right: 0.5vw;
-  margin-top: 1vw;
-  margin-bottom: 1vw;
+  margin-bottom: 3vw;
 }
 
 .button--blue:hover {
@@ -117,7 +103,7 @@ html {
   margin-left: 0.5vw;
   margin-right: 0.5vw;
   margin-top: 1vw;
-  margin-bottom: 1vw;
+  margin-bottom: 3vw;
 }
 
 .button--grey:hover {
@@ -128,6 +114,7 @@ html {
 .frame {
   border-color: #04648c;
   border-style: dashed;
+  margin-top: 10vw;
 }
 
 .timeline_container {
@@ -159,6 +146,31 @@ html {
   word-spacing: 0.5vw;
   padding-bottom: 2vw;
   margin-bottom: 0px;
+}
+
+.title {
+  font-family:
+    'Quicksand',
+    'Source Sans Pro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 18vw;
+  color: #35495e;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 5vw;
+  word-spacing: 1vw;
+  padding-bottom: 5vw;
+  color: #04648c;
 }
 
 @media (max-width: 800px) {

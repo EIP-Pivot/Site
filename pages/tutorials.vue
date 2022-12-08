@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-      <TutoFrame></TutoFrame>
+    <TutoFrame></TutoFrame>
   </div>
 </template>
 
