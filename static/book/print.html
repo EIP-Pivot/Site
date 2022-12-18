@@ -3,13 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Test Book</title>
+        <title>Pivot - Tutorial</title>
         <meta name="robots" content="noindex" />
 
 
         <!-- Custom HTML head -->
-
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
@@ -35,13 +34,13 @@
     </head>
     <body>
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -57,7 +56,7 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
@@ -69,7 +68,7 @@
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
+        <script>
             var html = document.querySelector('html');
             var sidebar = 'hidden';
             if (document.body.clientWidth >= 1080) {
@@ -82,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Chapter 1</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting_started.html"><strong aria-hidden="true">1.</strong> Getting started</a></li><li class="chapter-item expanded "><a href="pivot_quick_start.html"><strong aria-hidden="true">2.</strong> Pivot - Quick start</a></li><li class="chapter-item expanded "><a href="pivot_myCube.html"><strong aria-hidden="true">3.</strong> Pivot - My Cube</a></li><li class="chapter-item expanded "><a href="pivot_save_and_load.html"><strong aria-hidden="true">4.</strong> Pivot - Save and Load</a></li><li class="chapter-item expanded "><a href="Minecraft_to_Pivot.html"><strong aria-hidden="true">5.</strong> Pivot tools - Minecraft to Pivot</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -90,7 +89,7 @@
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
+                                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky bordered">
                     <div class="left-buttons">
                         <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -100,7 +99,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -111,7 +110,7 @@
                         </button>
                     </div>
 
-                    <h1 class="menu-title">Test Book</h1>
+                    <h1 class="menu-title">Pivot - Tutorial</h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -133,7 +132,7 @@
                 </div>
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -143,8 +142,154 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="chapter-1"><a class="header" href="#chapter-1">Chapter 1</a></h1>
-<p>This a test chapter for the integraption of the pivot tutorial</p>
+                        <h1 id="getting-started-with-pivot-game-engine"><a class="header" href="#getting-started-with-pivot-game-engine">Getting started with Pivot game engine</a></h1>
+<h2 id="requirements"><a class="header" href="#requirements">Requirements</a></h2>
+<ul>
+<li>VulkanSDK 1.3.211
+https://vulkan.lunarg.com/</li>
+<li>cmake &gt;= 3.11
+https://cmake.org/download/</li>
+</ul>
+<h3 id="--windows"><a class="header" href="#--windows">- WINDOWS</a></h3>
+<ul>
+<li>MSVC 17</li>
+</ul>
+<h3 id="--linux"><a class="header" href="#--linux">- LINUX</a></h3>
+<ul>
+<li>GCC &gt;= 11</li>
+</ul>
+<h2 id="download"><a class="header" href="#download">Download</a></h2>
+<p>Download the engine here : https://github.com/EIP-Pivot/pivot/releases</p>
+<h3 id="--windows-1"><a class="header" href="#--windows-1">- WINDOWS</a></h3>
+<p>Download the .zip</p>
+<h3 id="--linux-1"><a class="header" href="#--linux-1">- LINUX</a></h3>
+<p>Download the .tar.gz or the AppImage</p>
+<h2 id="build-and-compile"><a class="header" href="#build-and-compile">Build and Compile</a></h2>
+<h3 id="build"><a class="header" href="#build">Build</a></h3>
+<ul>
+<li>cmake -B build &amp;&amp; cmake --build build --parallel 4</li>
+</ul>
+<h3 id="compile"><a class="header" href="#compile">Compile</a></h3>
+<ul>
+<li>cmake . -DCMAKE_EXPORT_COMPILE_COMMANDS=ON</li>
+</ul>
+<h2 id="lunch-editor"><a class="header" href="#lunch-editor">Lunch Editor</a></h2>
+<ul>
+<li>cd build/</li>
+<li>./editor/Debug/editor.exe</li>
+</ul>
+<p><img src="https://cdn.discordapp.com/attachments/677099357173973014/995692249436393573/unknown.png" alt="enter image description here" /></p>
+<p><strong>Go to our Quick start guide and start using Pivot now!</strong></p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="quick-start"><a class="header" href="#quick-start">Quick start</a></h2>
+<p><img src="https://cdn.discordapp.com/attachments/734780616918302827/1042715236995694664/image.png" alt="pvtengine" /></p>
+<p>The pivot engine offers a view port and 5 control windows. These windows can be moved and resized.</p>
+<h3 id="key-mapping"><a class="header" href="#key-mapping">Key mapping</a></h3>
+<p>foreward : [z]</p>
+<p>backward : [s]</p>
+<p>left : [q]</p>
+<p>right : [d]</p>
+<p>toogle view port : [alt]</p>
+<p>toogle ImGUI translate : [e]</p>
+<p>toogle ImGUI rotate : [r]</p>
+<p>toogle ImGUI scale : [t]</p>
+<p>save : [ctrl + s]</p>
+<h2 id="menu-file"><a class="header" href="#menu-file">Menu &quot;File&quot;</a></h2>
+<p><img src="https://cdn.discordapp.com/attachments/734780616918302827/1042729447830339595/image.png" alt="Menu LoadSave" /></p>
+<p>Contains the functionality to save and load scenes. The window also allows to load scripts or graphic assets.</p>
+<h2 id="editor-menu"><a class="header" href="#editor-menu">Editor Menu</a></h2>
+<p><img src="https://cdn.discordapp.com/attachments/734780616918302827/1042715526650134548/image.png" alt="Menu editor" /></p>
+<p>The editor menu contains engine functionality</p>
+<h4 id="scene-selector"><a class="header" href="#scene-selector">Scene selector</a></h4>
+<p>Allows you to navigate between your different scenes.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042723967456251904/image.png" alt="Selecteur de scene" /></p>
+<h4 id="transformation-tools"><a class="header" href="#transformation-tools">Transformation tools</a></h4>
+<p>The editor allows to modify the value of the component transform of an entity, without going through the component menu, directly by interacting with the axes. </p>
+<p>Translate allows to modify the position of an entity.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042725336812630077/image.png" alt="Translate " /></p>
+<p>Rotate allows you to change the orientation of the entity.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042725385789509642/image.png" alt="Rotate" /></p>
+<p>Finally, Scale allows you to modify the size of the entity.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042725481193160734/image.png" alt="Scale " /></p>
+<h2 id="entity-menu"><a class="header" href="#entity-menu">Entity Menu</a></h2>
+<p>An entity is a structure composed of typical properties.</p>
+<p>To create an entity, use the &quot;Add Entity&quot; button in the entity menu and give it a name. Validate with the key [enter].</p>
+<p>You can create many entities.</p>
+<p><img src="https://cdn.discordapp.com/attachments/734780616918302827/1042715365681152050/image.png" alt="enter image description here" /></p>
+<p>The components of your entity are accessible via the component menu.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042727279463256126/image.png" alt="enter image description here" /></p>
+<h2 id="component-menu"><a class="header" href="#component-menu">Component Menu</a></h2>
+<p>It's an object who is attached to an entity an define his values and states.
+The component menu allows you to access the different objects attached to an entity, to modify their values and to add objects to your entity.</p>
+<p><img src="https://cdn.discordapp.com/attachments/734780616918302827/1042715526650134548/image.png" alt="Compoent menu" /></p>
+<p>After changing a value, confirm with [enter].</p>
+<h2 id="system-menu"><a class="header" href="#system-menu">System Menu</a></h2>
+<p>It's a function used to modify a defined entity by modifying its components.</p>
+<p><img src="https://cdn.discordapp.com/attachments/734780616918302827/1042715636419285033/image.png" alt="enter image description here" /></p>
+<p>To activate the systems, simply click on the play button on the top center for the screen.</p>
+<p><img src="https://cdn.discordapp.com/attachments/734780616918302827/1042715781374423110/image.png" alt="enter image description here" /></p>
+<h2 id="physics-system"><a class="header" href="#physics-system">Physics System</a></h2>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042782767387263107/image.png" alt="enter image description here" /></p>
+<p>The system physics allows to generate and modify the gravity applied to an entity.
+It <strong>requires</strong> an entity with the components <strong>[Gravity, Transform, RigidBody]</strong>.</p>
+<p><strong>You are now ready to create your First Cube with Pivot !</strong></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="creation-of-a-cube-with-pivot"><a class="header" href="#creation-of-a-cube-with-pivot">Creation of a cube with pivot</a></h1>
+<p>Create a new entity in the entity menu and give it a name, here &quot;myCube&quot;.
+In the component menu add a &quot;<strong>RenderObject</strong>&quot;, a &quot;<strong>Transform</strong>&quot; and a &quot;<strong>RigidBody</strong>&quot; to your entity.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042777723141107742/image.png" alt="enter image description here" /></p>
+<p>To display the cube you now need to load its graphic asset.
+Use the &quot;Save/Load&quot; menu and select &quot;Load asset&quot;.</p>
+<p>A cube asset can be found by default under <strong>editor/asset/cube.obj</strong>.</p>
+<p>If you want to use your own assets, Pivot is able to load <strong>.obj</strong> and <strong>.gltf</strong>.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042780835398557796/image.png" alt="enter image description here" /></p>
+<p>A window confirms the successful loading of your asset.
+You have made your first cube in the pivot engine.</p>
+<h2 id="modify-the-cube"><a class="header" href="#modify-the-cube">Modify the cube</a></h2>
+<p>We are now going to use the component menu to modify the variables of our cube.
+The &quot;transform&quot; component has built-in tools to modify its value without using the component menu.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042781573919035443/image.png" alt="enter image description here" /></p>
+<h3 id="moving"><a class="header" href="#moving">Moving</a></h3>
+<p>Moving an entity can be done by interacting with the axis present in our entity or by directly modifying its position values in the component menu.</p>
+<h3 id="rotation"><a class="header" href="#rotation">Rotation</a></h3>
+<p>The rotation of an entity is done by interacting with the present axis in our entity or by directly modifying its position values in the component menu.</p>
+<h3 id="scaling"><a class="header" href="#scaling">scaling</a></h3>
+<p>The scaling of an entity is done by interacting with the present axis in our entity or by directly modifying its position values in the component menu.</p>
+<h2 id="gravity"><a class="header" href="#gravity">Gravity</a></h2>
+<p>To add gravity to the previously created cube, simply add the system physics.
+You can then modify the velocity and acceleration of your cube, or apply the gravity component.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042782612495814716/image.png" alt="enter image description here" /></p>
+<p>After adding the physic system, activate the system using the editor menu.
+You can observe the evolution of your cube under the physic system.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042782676836417656/image.png" alt="enter image description here" /></p>
+<p>After activation of the systems our cube has moved well.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042782767387263107/image.png" alt="enter image description here" /></p>
+<p><strong>Jump now to the save and load guide to save your Pivot scenes!</strong></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="save"><a class="header" href="#save">SAVE</a></h1>
+<p>The pivot engine allows you to save and load scenes in order to resume your creation later.
+Open the File menu and select &quot;Save Scene&quot;</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042783672778113044/image.png" alt="enter image description here" /></p>
+<h1 id="load"><a class="header" href="#load">LOAD</a></h1>
+<p>After pressing Load, you will be redirected to your file explorer. Select the scene to load and confirm with [enter]. A confirmation message similar to that of the backup will confirm the loading of your scene.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042785002078867506/image.png" alt="enter image description here" /></p>
+<p>You will find your scene previously loaded.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042785773595922502/image.png" alt="enter image description here" /></p>
+<h2 id="launch-pivot-with-a-predefined-scene"><a class="header" href="#launch-pivot-with-a-predefined-scene">Launch pivot with a predefined scene</a></h2>
+<p>Add the path of a scene as argument with the -s or --scene flag to the engine launch allows to load this scene in the engine.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042786536032321576/image.png" alt="enter image description here" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="minecraft-to-pivot"><a class="header" href="#minecraft-to-pivot">Minecraft to Pivot</a></h1>
+<p>Mc2Pvt is a simple tool alowing you to create a pivot scene with any minecraft world.</p>
+<p>Simply doawnload the repos and put the file in the region folder of your minecraft word.</p>
+<p>The next step is to create a box that's cover the part of the word you want to pivot.</p>
+<p>you should have 2 time 3 coords, simply call scaner.py with this coord box.</p>
+<h2 id="the-scanning-prosses-may-take-some-times"><a class="header" href="#the-scanning-prosses-may-take-some-times">The scanning prosses may take some times</a></h2>
+<p>The scaner will create a 1st json file where you have all the blocks of the selected region.</p>
+<p>Pass this file to createPivotScene.py to get your Pivot save.</p>
+<p>You can now load this scene like any other in the Pivot editor.</p>
+<pre><code class="language-mermaid">graph LR
+A[Box_coord] -- scan.py --&gt; B((map.json))
+
+B -- createPivotScene.py --&gt; D{Pivot_save.json}
+
+</code></pre>
 
                     </main>
 
@@ -166,22 +311,22 @@
 
 
 
-        <script type="text/javascript">
+        <script>
             window.playground_copyable = true;
         </script>
 
 
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
 
-        <script type="text/javascript">
+        <script>
         window.addEventListener('load', function() {
             window.setTimeout(window.print, 100);
         });

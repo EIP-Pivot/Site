@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Getting started - Pivot - Tutorial</title>
+        <title>Pivot - My Cube - Pivot - Tutorial</title>
 
 
         <!-- Custom HTML head -->
@@ -80,7 +80,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting_started.html" class="active"><strong aria-hidden="true">1.</strong> Getting started</a></li><li class="chapter-item expanded "><a href="pivot_quick_start.html"><strong aria-hidden="true">2.</strong> Pivot - Quick start</a></li><li class="chapter-item expanded "><a href="pivot_myCube.html"><strong aria-hidden="true">3.</strong> Pivot - My Cube</a></li><li class="chapter-item expanded "><a href="pivot_save_and_load.html"><strong aria-hidden="true">4.</strong> Pivot - Save and Load</a></li><li class="chapter-item expanded "><a href="Minecraft_to_Pivot.html"><strong aria-hidden="true">5.</strong> Pivot tools - Minecraft to Pivot</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting_started.html"><strong aria-hidden="true">1.</strong> Getting started</a></li><li class="chapter-item expanded "><a href="pivot_quick_start.html"><strong aria-hidden="true">2.</strong> Pivot - Quick start</a></li><li class="chapter-item expanded "><a href="pivot_myCube.html" class="active"><strong aria-hidden="true">3.</strong> Pivot - My Cube</a></li><li class="chapter-item expanded "><a href="pivot_save_and_load.html"><strong aria-hidden="true">4.</strong> Pivot - Save and Load</a></li><li class="chapter-item expanded "><a href="Minecraft_to_Pivot.html"><strong aria-hidden="true">5.</strong> Pivot tools - Minecraft to Pivot</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -141,51 +141,47 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="getting-started-with-pivot-game-engine"><a class="header" href="#getting-started-with-pivot-game-engine">Getting started with Pivot game engine</a></h1>
-<h2 id="requirements"><a class="header" href="#requirements">Requirements</a></h2>
-<ul>
-<li>VulkanSDK 1.3.211
-https://vulkan.lunarg.com/</li>
-<li>cmake &gt;= 3.11
-https://cmake.org/download/</li>
-</ul>
-<h3 id="--windows"><a class="header" href="#--windows">- WINDOWS</a></h3>
-<ul>
-<li>MSVC 17</li>
-</ul>
-<h3 id="--linux"><a class="header" href="#--linux">- LINUX</a></h3>
-<ul>
-<li>GCC &gt;= 11</li>
-</ul>
-<h2 id="download"><a class="header" href="#download">Download</a></h2>
-<p>Download the engine here : https://github.com/EIP-Pivot/pivot/releases</p>
-<h3 id="--windows-1"><a class="header" href="#--windows-1">- WINDOWS</a></h3>
-<p>Download the .zip</p>
-<h3 id="--linux-1"><a class="header" href="#--linux-1">- LINUX</a></h3>
-<p>Download the .tar.gz or the AppImage</p>
-<h2 id="build-and-compile"><a class="header" href="#build-and-compile">Build and Compile</a></h2>
-<h3 id="build"><a class="header" href="#build">Build</a></h3>
-<ul>
-<li>cmake -B build &amp;&amp; cmake --build build --parallel 4</li>
-</ul>
-<h3 id="compile"><a class="header" href="#compile">Compile</a></h3>
-<ul>
-<li>cmake . -DCMAKE_EXPORT_COMPILE_COMMANDS=ON</li>
-</ul>
-<h2 id="lunch-editor"><a class="header" href="#lunch-editor">Lunch Editor</a></h2>
-<ul>
-<li>cd build/</li>
-<li>./editor/Debug/editor.exe</li>
-</ul>
-<p><img src="https://cdn.discordapp.com/attachments/677099357173973014/995692249436393573/unknown.png" alt="enter image description here" /></p>
-<p><strong>Go to our Quick start guide and start using Pivot now!</strong></p>
+                        <h1 id="creation-of-a-cube-with-pivot"><a class="header" href="#creation-of-a-cube-with-pivot">Creation of a cube with pivot</a></h1>
+<p>Create a new entity in the entity menu and give it a name, here &quot;myCube&quot;.
+In the component menu add a &quot;<strong>RenderObject</strong>&quot;, a &quot;<strong>Transform</strong>&quot; and a &quot;<strong>RigidBody</strong>&quot; to your entity.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042777723141107742/image.png" alt="enter image description here" /></p>
+<p>To display the cube you now need to load its graphic asset.
+Use the &quot;Save/Load&quot; menu and select &quot;Load asset&quot;.</p>
+<p>A cube asset can be found by default under <strong>editor/asset/cube.obj</strong>.</p>
+<p>If you want to use your own assets, Pivot is able to load <strong>.obj</strong> and <strong>.gltf</strong>.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042780835398557796/image.png" alt="enter image description here" /></p>
+<p>A window confirms the successful loading of your asset.
+You have made your first cube in the pivot engine.</p>
+<h2 id="modify-the-cube"><a class="header" href="#modify-the-cube">Modify the cube</a></h2>
+<p>We are now going to use the component menu to modify the variables of our cube.
+The &quot;transform&quot; component has built-in tools to modify its value without using the component menu.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042781573919035443/image.png" alt="enter image description here" /></p>
+<h3 id="moving"><a class="header" href="#moving">Moving</a></h3>
+<p>Moving an entity can be done by interacting with the axis present in our entity or by directly modifying its position values in the component menu.</p>
+<h3 id="rotation"><a class="header" href="#rotation">Rotation</a></h3>
+<p>The rotation of an entity is done by interacting with the present axis in our entity or by directly modifying its position values in the component menu.</p>
+<h3 id="scaling"><a class="header" href="#scaling">scaling</a></h3>
+<p>The scaling of an entity is done by interacting with the present axis in our entity or by directly modifying its position values in the component menu.</p>
+<h2 id="gravity"><a class="header" href="#gravity">Gravity</a></h2>
+<p>To add gravity to the previously created cube, simply add the system physics.
+You can then modify the velocity and acceleration of your cube, or apply the gravity component.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042782612495814716/image.png" alt="enter image description here" /></p>
+<p>After adding the physic system, activate the system using the editor menu.
+You can observe the evolution of your cube under the physic system.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042782676836417656/image.png" alt="enter image description here" /></p>
+<p>After activation of the systems our cube has moved well.</p>
+<p><img src="https://cdn.discordapp.com/attachments/823213380084695081/1042782767387263107/image.png" alt="enter image description here" /></p>
+<p><strong>Jump now to the save and load guide to save your Pivot scenes!</strong></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="pivot_quick_start.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
-                            <a rel="next" href="pivot_quick_start.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="pivot_save_and_load.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -195,8 +191,11 @@ https://cmake.org/download/</li>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="pivot_quick_start.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
-                    <a rel="next" href="pivot_quick_start.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="pivot_save_and_load.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

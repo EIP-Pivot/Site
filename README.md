@@ -1,4 +1,4 @@
-# PixelUP
+# Pivot
 
 ## Build Setup
 
