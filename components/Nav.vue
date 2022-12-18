@@ -34,6 +34,7 @@
 
 <style scoped>
 .Nav {
+  z-index: 1000;
   position: fixed;
   display: flex;
   justify-content: space-between;
