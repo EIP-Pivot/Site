@@ -45,7 +45,7 @@
           Démonstration du moteur
         </a>
 
-        <NuxtLink class="button--grey" to="/quick_start">Démarage rapide</NuxtLink>
+        <NuxtLink class="button--grey" to="/user_doc">Documentation utilisateur</NuxtLink>
         <NuxtLink class="button--blue" to="/tutorials">Tutoriels</NuxtLink>
 
         <div class="spacing"></div>
