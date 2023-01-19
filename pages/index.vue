@@ -52,9 +52,9 @@
 
         <div class="article">
           <div class="article_title">
-          Dernère mise à jour de l'équipe Pivot
+          Dernière mise à jour de l'équipe Pivot
           </div>
-        "Nous développons actuellement la Beta de Pivot engine !"
+        "La Beta de Pivot Engine est disponible !"
         </div>
 
         <div class="spacing"></div>
@@ -117,7 +117,7 @@ export default {
 }
 
 .head_box {
-  margin-top: 10vw;
+  margin-top: 13vw;
   margin-bottom: 2vw;
   display: flex;
   flex-direction: row;
